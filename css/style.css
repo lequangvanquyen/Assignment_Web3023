@@ -189,14 +189,6 @@ header .bxs-chevron-down {
     text-align: right;
 }
 
-.mot span {
-    letter-spacing: 0.5rem;
-}
-
-.hai span {
-    letter-spacing: 0.5rem;
-}
-
 ul.products {
     display: flex;
     flex-wrap: wrap;
