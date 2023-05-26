@@ -1,0 +1,467 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root {
+    --text-color: #fff;
+    --logo-color: #9acd32;
+    --main-color: #333;
+    --bg-color: #A19371;
+    --bg2-color: #446084;
+    --footer-color: #525252;
+}
+
+a {
+    color: var(--text-color);
+}
+
+section {
+    padding: 5%;
+}
+
+/*----------------------------header----------------------*/
+
+header {
+    background-image: url(../images/brg_header.jpg);
+    background-size: cover;
+    /* Hiển thị ảnh với kích thước phù hợp */
+    background-position: center;
+    /* Căn giữa ảnh */
+    height: 100vh;
+}
+
+header .top {
+    width: 100%;
+    height: 80px;
+    padding: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .top>a.logo {
+    /* color: var(--logo-color); */
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+header .top nav {
+    display: flex;
+}
+
+header .top nav a {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    padding: 0 30px;
+    font-weight: 500;
+    transition: all .50s ease;
+}
+
+header .top nav a:hover {
+    color: var(--logo-color);
+}
+
+header .content {
+    color: var(--text-color);
+    width: 100%;
+    text-align: center;
+    margin-top: 110px;
+}
+
+header .content h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+header .content p {
+    width: 50%;
+    height: 67px;
+    margin-left: 25%;
+    line-height: 1.3;
+    text-align: center;
+    font-size: 20px;
+}
+
+header .bxs-chevron-down {
+    font-size: 50px;
+    margin-top: 300px;
+}
+
+/*----------------------------Second ----------------------*/
+.second {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #d5d5d5;
+}
+
+.second .letf nav {
+    display: flex;
+}
+
+.second .letf nav li {
+    padding: 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.second .letf nav li input {
+    margin-right: 10px;
+    width: 25px;
+    height: 25px;
+}
+
+.second .right a {
+    font-size: 14px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.second .right .btn {
+    display: inline-block;
+    padding: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 0.5rem;
+}
+
+.second .right .btn:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+}
+
+/*----------------------------products ----------------------*/
+.text-with-line {
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+
+.text-with-line::before {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--bg-color);
+    margin-left: 30px;
+}
+
+.text-with-line-women {
+    padding: 3% 0;
+    display: flex;
+    align-items: center;
+}
+
+.text-with-line-women::before {
+    content: "";
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--bg-color);
+    margin-right: 30px;
+}
+
+.text-with-line,
+.text-with-line-women p {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.mot {
+    padding-bottom: 20px;
+    color: var(--bg-color);
+}
+
+.hai {
+    padding-bottom: 20px;
+    color: var(--bg-color);
+    text-align: right;
+}
+
+.mot span {
+    letter-spacing: 0.5rem;
+}
+
+.hai span {
+    letter-spacing: 0.5rem;
+}
+
+ul.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+ul.products li {
+    flex-basis: 25%;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 30px;
+    background-color: #d5d5d5;
+    border-radius: 10px;
+}
+
+ul.products li:hover {
+    border: 1px solid var(--bg-color);
+}
+
+ul.products li img {
+    max-width: 100%;
+    height: 300px;
+}
+
+ul.products .product-infor {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul.products .product-infor a {
+    color: var(--bg-color);
+    font-size: 18px;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+ul.products li:hover .product-top .product-thumb img {
+    filter: opacity(80%);
+}
+
+ul.products li:hover a.buy-now {
+    bottom: 0px;
+}
+
+.product-top {
+    position: relative;
+    overflow: hidden;
+}
+
+.product-top .top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-top .top .circle {
+    display: flex;
+    margin-top: 30px;
+}
+
+.product-top .top .circle-1 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.product-top .top .circle-2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.product-top .top .circle-3 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.product-top .top .circle-4 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #D3A7AB;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.product-top .top .circle-5 {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #525252;
+    cursor: pointer;
+}
+
+.product-top p {
+    font-size: 16px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.product-top .product-thumb {
+    display: block;
+}
+
+.product-top a.buy-now {
+    text-transform: uppercase;
+    text-align: center;
+    display: block;
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+    padding: 10px 0;
+    position: absolute;
+    bottom: -45px;
+    width: 100%;
+    transition: .30s ease-in;
+    opacity: 0.85;
+}
+
+.product-top p i {
+    color: var(--main-color);
+    width: 12px;
+    height: 8px;
+}
+
+.product-top p.litri {
+    font-size: 18px;
+    color: var(--main-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.product-item .product-infor {
+    padding: 30px;
+}
+
+.product-item .product-pice {
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+/*----------------------------contact ----------------------*/
+.cta {
+    background: var(--bg-color);
+    padding: 70px 0;
+    text-align: center;
+    width: 100%;
+    height: 400px;
+}
+
+.cta fieldset {
+    width: 700px;
+    border: 1px solid var(--main-color);
+    margin: 40px 25%;
+    color: var(--footer-color);
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.cta p {
+    font-size: 16px;
+    color: var(--main-color);
+    line-height: 1.5;
+    text-align: center;
+    padding: 40px;
+}
+
+/*----------------------------footer-top  ----------------------*/
+.footer-top {
+    width: 100%;
+    height: 50px;
+    background-color: var(--footer-color);
+    display: flex;
+}
+
+.footer-top i {
+    color: #333
+}
+
+.footer-top span {
+    color: var(--text-color);
+    margin-left: 20px;
+}
+
+/*----------------------------footer 2 ----------------------*/
+footer {
+    width: 100%;
+    height: 350px;
+    background-color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+}
+
+footer .letf {
+    width: 30%;
+}
+
+footer .letf p {
+    color: var(--text-color);
+    margin-top: 15px;
+    line-height: 1.5;
+    font-weight: 100;
+    font-size: 14px;
+}
+
+footer h3 {
+    font-size: 20px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    line-height: 1.2;
+    text-align: letf;
+}
+
+.social {
+    width: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social a {
+    height: 40px;
+    width: 40px;
+    background: var(--bg2-color);
+    color: var(--text-color);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    transition: .4s;
+}
+
+.social a:hover {
+    transform: scale(1.3);
+    color: var(--bg2-color);
+    background: var(--text-color);
+}
+
+/*----------------------------Back top ----------------------*/
+#backtop {
+    width: 50px;
+    height: 50px;
+    background-color: var(--bg2-color);
+    color: var(--text-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 2.5rem;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    cursor: pointer;
+    opacity: 80%;
+}
