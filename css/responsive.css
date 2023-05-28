@@ -1,0 +1,100 @@
+@media (max-width: 1024px) {
+    header .content {
+        text-align: center;
+        margin-top: 200px;
+    }
+
+    header .content h1 {
+        font-size: 30px;
+        margin-bottom: 30px;
+    }
+
+    header .content p {
+        width: 50%;
+        margin-left: 25%;
+        line-height: 1.3;
+        text-align: center;
+        font-size: 15px;
+    }
+
+    header .bxs-chevron-down {
+        margin-top: 550px;
+    }
+
+    ul {
+        width: 400px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta fieldset {
+        width: 400px;
+    }
+
+    .cta p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 726px) {
+    header .top>a.logo {
+        font-size: 2rem;
+    }
+
+    header .top nav a {
+        padding: 0 15px;
+    }
+
+    header .content h1 {
+        font-size: 14px;
+        word-spacing: 5px;
+        letter-spacing: 2px;
+    }
+
+    header .content p {
+        font-size: 12px;
+    }
+
+    header .bxs-chevron-down {
+        margin-top: 250px;
+    }
+
+    .second .letf nav li {
+        display: none;
+    }
+
+    .second .right {
+        margin: 0 auto;
+    }
+
+    ul {
+        width: 300px;
+    }
+
+    .cta fieldset {
+        width: 200px;
+        height: 200px;
+    }
+
+    .cta p {
+        font-size: 8px;
+    }
+
+    footer {
+        height: 200px;
+    }
+
+    footer .letf {
+        display: none;
+    }
+
+    .social {
+        margin: 0 auto;
+    }
+
+    #backtop {
+        width: 25px;
+        height: 25px;
+    }
+}
